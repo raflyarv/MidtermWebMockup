@@ -1,0 +1,498 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index-styles.css">    
+    <title> Travelo Mockup Website </title>
+
+    <script src="https://kit.fontawesome.com/9dfb802e9c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="search-display" id="search">
+        <div class="overlay" id="close" onclick="searchToggle()">
+
+        </div>
+
+        <div class="inputs" id="input"> 
+            <input type="text" placeholder="Search">
+            <button> Search </button>
+        </div>
+    </div>
+
+    <div class="embedded-youtube" id="youtube-embed">
+        <iframe src="https://www.youtube.com/embed/11cta61wi0g" title="NewJeans (뉴진스) 'Hype Boy' Official MV (Performance ver.1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-xmark fa-2x" onclick="embeddedVideo()"></i>
+    </div>
+
+    <nav id="nav">
+        <div class="main-navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="data:image/webp;base64,UklGRrQDAABXRUJQVlA4TKgDAAAviQAKEGfBqG0kScm8rgW0/HnNhIaCtm0Yd+PP+KFp20hu95+fwvMH+GUUSbaTP9cf2CVzxAKFgOzfAR5w8AMCbvqciM1DU91ZyvufpViap/Jn6E0W2K+9d/r9//6JYVWqOCPREMIiIIQBVmpYIwSIgJACpgQR/gYHaQIiIizZtu2oce5aNUqfJzkESka4wyUd8v8/CAhMopVpRP8nAGIkyXGbBQ6A8A6Qf7o40rKdQET/J0Abpz+XB8Dj8n5Szd37k+Ln2dXKzkCOwTtwvosZGKxKTYJrozlo3kRIbYXOMHotj+OC5O8w1MYG6LRrBw+ry0ButLPPPKrSkyftPmWGijTQaM/mmVpJHtpqWKLTngFIktSSXC16Ru1oF+jJM92JG97K/0kq5ysO/A7Tg+wjYWECV/T2vTz/j077Ss9V25vE6BzZFhSJ/57+lSfNtgDRFAla9qSi5c/fP+sv/tJE1la7QCc5sq3og6YGHXHL9CB7SZGg9Z7+BbkEpVJMUsit97qvU/JTLvGy2nvbPwm79V63d6Xb4BOjk+TIVtByfwHkCRTpLNwRpATHS3Ck0HBHeHUm7jjXA19miWiSFAkq9KSXLEbvSWExk1leVEmT6jWGpMYqZnsx3oTFKmZlMYMkcGUBBklyZCsRvISt21hBkjYEqbDCFWFLBiZJB/KLCkeSDIoDjwJLwCApErR+gRdV+RZ1G5gUYV+ZFaTKkFsZLxZVbmc+jAWB+SBHtoL7y8qDe+zjqNGvSZU0KV6GpwDZK+A4FVpaYIgElR/F6sS9EkTJ4EiC2d3xxsDejfiSwHq2Mk8+QuhAr6V4mnykypDz9nt3ugJLBa3KG+5H6KwtSfZQmAqL7RW9dg6kd4FYEFjNXht7+gMcSLrTQ4S0WeHqtC8IivdxPGnN0srotPVJcwCD6PQHNdqg6s4QnV32i8F0wqJJ0gfNSmA5mrZOZDtAgBokVZ4SwHHCYgRJBT4vEtQghQZ29cQlS0udtkeiDqACq/dFe9KEIT/B6n3CCC9UYfUOfHQ78AuBefba7sDt8On7p6VF9pQnsIrgeAXSg04HmEV3o17aE2Am+ZHbwsdsdNrxxl1HPWb6xWgW9fNoFvVsmW6WgWjasSW7w/z/FrykNudOe06JTvWMpEm7W+Kqmo6kaa8pMVpVbIR2nzYxmiob4TatXG4r7gZXU3W7DINfgIVpADrV2EXgef59mp1+nZ/A3anSLmaKc3SqedPf8yzf+8b0/w4=" alt="Travelo Logo">
+                </a>
+            </div>
+            <ul>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="#"> About </a> </li>
+                <li> <a href="#"> Destination </a> </li>
+                <li> <a href="#"> Pages <i class="fa-solid fa-chevron-down fa-xs"></i> </a>
+                    <ul>
+                        <li> <a href="#"> Destination Details </a> </li>
+                        <li> <a href="#"> Element </a> </li>
+                    </ul>
+                </li>
+                <li> <a href="#"> Blog <i class="fa-solid fa-chevron-down fa-xs"></i> </a> 
+                    <ul>
+                        <li> <a href="blog.html"> Blog </a> </li>
+                        <li> <a href="#"> Single-Blog </a> </li>
+                    </ul>
+                </li>
+                <li> <a href="contacts.html"> Contact </a> </li>
+            </ul>
+        </div>
+
+        <div class="side-navbar">
+            <div class="cell">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p> +62 878 8867 7639 </p>
+            </div>
+
+            <div class="socials">
+                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+            </div>
+
+            <div class="search-button" id="show" onclick="searchToggle()">
+                <button>
+                    <img src="/materials/icon/search-13-16.png" alt="SearchIcon">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="image-gallery">
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1602154663343-89fe0bf541ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnQlMjBicm9tb3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="Bali">
+            <div class="content">
+                <h1> Indonesia </h1>
+                <h3> Pixel perfect design with awesome contents </h3>
+                <button> Explore Now </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="wheretogo-area">
+        <h1> Where you want to go? </h1>
+        <div class="input-area">
+            <input type="text" placeholder="Where to go?">
+            <input type="date" placeholder="Date">
+            <select>
+                <option> Travel type </option>
+                <option> Some option </option>
+                <option> Another option </option>
+            </select>
+            <button> Search </button>
+        </div>
+    </div>
+
+    <div class="pop-destination">
+        <div class="highlight">
+            <h1> Popular Destination  </h1>
+            <p> Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+        </div>
+
+        <div class="destinations">
+            <div class="items">
+                <img src="https://preview.colorlib.com/theme/travelo/img/destination/x1.png.pagespeed.ic.U57u1BX_9-.webp" alt="#1">
+                <div class="menu">
+                    <h3> Italy </h3>
+                    <a> 07 Places </a>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="https://preview.colorlib.com/theme/travelo/img/destination/x2.png.pagespeed.ic.84P8l8vv4O.webp" alt="#2">
+                <div class="menu">
+                    <h3> Brazil </h3>
+                    <a> 03 Places </a>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="https://preview.colorlib.com/theme/travelo/img/destination/x3.png.pagespeed.ic.78W6B32hsk.webp" alt="#3">
+                <div class="menu">
+                    <h3> America </h3>
+                    <a> 10 Places </a>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="https://preview.colorlib.com/theme/travelo/img/destination/x4.png.pagespeed.ic.eWKrFKhuKv.webp" alt="#4">
+                <div class="menu">
+                    <h3> Nepal </h3>
+                    <a> 02 Places </a>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="https://preview.colorlib.com/theme/travelo/img/destination/x5.png.pagespeed.ic.w9itzKnbmP.webp" alt="#5">
+                <div class="menu">
+                    <h3> Maldives </h3>
+                    <a> 02 Places </a>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="https://preview.colorlib.com/theme/travelo/img/destination/x6.png.pagespeed.ic.G2cL_XuMxk.webp" alt="#6">
+                <div class="menu">
+                    <h3> Indonesia </h3>
+                    <a> 05 Places </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news-subscribe">
+        <div class="overlay">
+            <div class="newsletter">
+                <h2> Subscribe Our Newsletter</h2>
+                <h3> Subscribe newsletter to get offers and about new places to discover. </h3>
+            </div>
+    
+            <div class="user-email">
+                <input type="text" placeholder="Your mail">
+                <button type="submit"> Subscribe </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop-places">
+        <div class="highlight">
+            <h1> Popular Places  </h1>
+            <p> Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+        </div>
+
+        <div class="places">
+            <div class="items">
+                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z29sZGVuJTIwZ2F0ZSUyMGJyaWRnZXxlbnwwfHwwfHw%3D&w=1000&q=80">
+                <a> $500 </a>
+                <div class="content">
+                    <h2> California </h2>
+                    <h3> United State of America </h3>
+                    <div class="misc">
+                        <div class="stars">
+                            <div class="review">
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                            </div>
+                            <p> (20 Review) </p>
+                        </div>
+
+                        <div class="timestamp">
+                            <i class="fa fa-clock-o fa-xs" aria-hidden="true"></i>
+                            <p> 5 days </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="https://technext.github.io/travelo/img/place/2.png">
+                <a> $500 </a>
+                <div class="content">
+                    <h2> Korola Megna </h2>
+                    <h3> United State of America </h3>
+                    <div class="misc">
+                        <div class="stars">
+                            <div class="review">
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                            </div>
+                            <p> (20 Review) </p>
+                        </div>
+
+                        <div class="timestamp">
+                            <i class="fa fa-clock-o fa-xs" aria-hidden="true"></i>
+                            <p> 5 days </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="https://awsimages.detik.net.id/visual/2021/10/24/pemandangan-kota-london_169.jpeg?w=650">
+                <a> $500 </a>
+                <div class="content">
+                    <h2> London </h2>
+                    <h3> United State of America </h3>
+                    <div class="misc">
+                        <div class="stars">
+                            <div class="review">
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                            </div>
+                            <p> (20 Review) </p>
+                        </div>
+
+                        <div class="timestamp">
+                            <i class="fa fa-clock-o fa-xs" aria-hidden="true"></i>
+                            <p> 5 days </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fit,w_1440,h_900/crm/miamifl/CityOfMiamiBeach_2B4867CD-5056-A36A-0B06BD1F65D0FBA7-2b4862e65056a36_2b486f7e-5056-a36a-0b236ac9d9cdc4fc.jpg">
+                <a> $500 </a>
+                <div class="content">
+                    <h2> Miami Beach </h2>
+                    <h3> United State of America </h3>
+                    <div class="misc">
+                        <div class="stars">
+                            <div class="review">
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                            </div>
+                            <p> (20 Review) </p>
+                        </div>
+
+                        <div class="timestamp">
+                            <i class="fa fa-clock-o fa-xs" aria-hidden="true"></i>
+                            <p> 5 days </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="https://www.thoughtco.com/thmb/zkKzSLlp4-9onth7vL2itmeJ9iA=/395x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-869041446-5c8b237746e0fb000146acda.jpg">
+                <a> $500 </a>
+                <div class="content">
+                    <h2> California </h2>
+                    <h3> United State of America </h3>
+                    <div class="misc">
+                        <div class="stars">
+                            <div class="review">
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                            </div>
+                            <p> (20 Review) </p>
+                        </div>
+
+                        <div class="timestamp">
+                            <i class="fa fa-clock-o fa-xs" aria-hidden="true"></i>
+                            <p> 5 days </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/97/4c/6c/beauty-of-saint-martin.jpg">
+                <a> $500 </a>
+                <div class="content">
+                    <h2> Saintmartine Iceland </h2>
+                    <h3> United State of America </h3>
+                    <div class="misc">
+                        <div class="stars">
+                            <div class="review">
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-xs" aria-hidden="true"></i>
+                            </div>
+                            <p> (20 Review) </p>
+                        </div>
+
+                        <div class="timestamp">
+                            <i class="fa fa-clock-o fa-xs" aria-hidden="true"></i>
+                            <p> 5 days </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button> More Places </button>
+    </div>
+
+    <div class="video-preview">
+        <iframe src="https://www.youtube.com/embed/BFS9n4B_2xA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <img src="https://cdn.getyourguide.com/img/location/5c83ec8100f71.jpeg/99.webp">
+        <div class="info">
+            <h1> Enjoy Video </h1>
+            <a onclick="embeddedVideo()"> <i class="fa fa-play fa-lg" aria-hidden="true"></i> </a>
+        </div> -->
+    </div>
+
+    <div class="key-products">
+        <div class="keys">
+            <i class="fa fa-train fa-4x" aria-hidden="true"></i>
+            <h2> Comfortable Journey </h2>
+            <p> A wonderful serenity has taken to the possession of my entire soul </p>
+        </div>
+
+        <div class="keys">
+            <i class="fa fa-h-square fa-4x" aria-hidden="true"></i>
+            <h2> Luxuries Hotel </h2>
+            <p> A wonderful serenity has taken to the possession of my entire soul </p>
+        </div>
+
+        <div class="keys">
+            <i class="fa fa-globe fa-4x" aria-hidden="true"></i>
+            <h2> Travel Guide </h2>
+            <p> A wonderful serenity has taken to the possession of my entire soul </p>
+        </div>
+    </div>
+
+    <section>
+        <div class="testimonials">
+            <div class="profile">
+                <img src="https://asset.kompas.com/crops/kb9M9iyTD_YrxfQq0xoULchFvBU=/0x0:900x600/750x500/data/photo/2022/03/15/62302bf09b273.jpg">
+                <i class="fa-solid fa-quote-left fa-lg"></i>
+            </div>
+            <div class="review">
+                <p id="content">
+                    "Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering."
+                </p>
+                <p id="writer">
+                    - RaflyARV
+                </p>
+            </div>
+
+            <div class="pagination">
+                <i class="fa-solid fa-circle fa-sm" id="one"></i>
+                <i class="fa-regular fa-circle fa-sm" id="two"></i>
+                <i class="fa-regular fa-circle fa-sm" id="three"></i>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pop-places">
+            <h1> Recent Trips </h1>
+            <div class="grids">
+                <div class="trips">
+                    <img src="https://lp-cms-production.imgix.net/2022-03/Indonesia%20Bali%20fernanda%20photos%20shutterstock_1369957904%20RFE.jpg?auto=format&q=40&ar=16%3A9&fit=crop" alt="RT1">
+                    <div class="title">
+                        <p> Oct 12, 2019 </p>
+                        <h1> Journeys Are Best Measured In New Friends </h1>
+                    </div>
+                </div>
+
+                <div class="trips">
+                    <img src="https://www.experiencetravelgroup.com/reposit/20200923141039.jpg" alt="RT1">
+                    <div class="title">
+                        <p> Oct 12, 2019 </p>
+                        <h1> Journeys Are Best Measured In New Friends </h1>
+                    </div>
+                </div>
+
+                <div class="trips">
+                    <img src="https://withlocals-com-res.cloudinary.com/image/upload/w_284,h_208,c_fill,g_auto,q_auto,dpr_3.0,f_auto/destinations/indonesia/Bali" alt="RT1">
+                    <div class="title">
+                        <p> Oct 12, 2019 </p>
+                        <h1> Journeys Are Best Measured In New Friends </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="topside">
+            <div class="address">
+                <img src="https://preview.colorlib.com/theme/travelo/img/xfooter_logo.png.pagespeed.ic.lvE0aE5-r2.webp" alt="Logo">
+                <p> 
+                    5th flora, 700/D kings road, green lane New York-1782 +10 367 826 2567 contact@carpenter.com
+                </p>
+            </div>
+    
+            <div class="company">
+                <h2> Company </h2>
+                <div class="grids">
+                    <a> Pricing </a>
+                    <a> About </a>
+                    <a> Gallery </a>
+                    <a> Contact </a>
+                </div>
+            </div>
+    
+            <div class="popular-dest">
+                <h2> Popular Destination </h2>
+                <div class="grids">
+                    <a> Indonesia </a>
+                    <a> India </a>
+                    <a> Italy </a>
+                    <a> French </a>
+                    <a> America </a>
+                    <a> Switzerland </a>
+                    <a> Canada </a>
+                    <a> England </a>
+                </div>
+            </div>
+    
+            <div class="instagram-prev">
+                <h2> Instagram </h2>
+                <div class="grids">
+                    <a href="#">
+                        <img src="https://as1.ftcdn.net/v2/jpg/00/39/24/32/1000_F_39243218_cd3nNItSFScXQ7EylR4d0BWbNA7ZYwt0.jpg">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://images.unsplash.com/photo-1533734635438-fa92e72a1f0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5kb25lc2lhbiUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://www.borgenmagazine.com/wp-content/uploads/2017/08/16653510798_de5aec03c1_k.jpg">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/general-information/local-law/cutlture-thumbnail.jpg">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://img.theculturetrip.com/450x/smart/wp-content/uploads/2017/11/shutterstock_437723152.jpg">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://images.theconversation.com/files/190576/original/file-20171017-30394-ta4a55.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="socials">
+            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+        </div>
+
+        <div class="copyright">
+            <hr>
+            <p> Copyright ©2022 All rights reserved | This template is made with
+                <i class="fa-regular fa-heart"></i> by Colorlib </p>
+        </div>
+    </footer>
+
+</body>
+</html>

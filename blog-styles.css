@@ -1,0 +1,282 @@
+@import url(index-styles.css);
+
+body {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    width: 1070px;
+    flex-direction: row;
+    background-color: #F7FAFD;
+    align-items: flex-start;
+    margin: 100px auto;
+}
+
+section article {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+}
+
+section article .items {
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0 0 20px 0;
+    margin: 0 0 50px 0;
+}
+
+article .items .image-preview {
+    width: 100%;
+    position: relative;
+    margin: 0 0 20px 0;
+}
+
+article .items .image-preview img {
+    width: 730px;
+    height: 365px;
+    object-fit: cover;
+    position: relative;
+}
+
+article .items .image-preview h1 {
+    width: 84px;
+    font-size: 28px;
+    padding: 12px 10px;
+    background-color: #ff4a52;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin: -90px 0 0 30px;
+    position: absolute;
+}
+
+article .items .preview {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+
+article .items .preview h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+article .items .preview p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+article .items .preview .timestamp {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px 0 0 0;
+}
+
+article .items .preview .timestamp > .user,
+article .items .preview .timestamp > .comments {
+    display: flex;
+    width: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article .pagination {
+    display: flex;
+    width: 250px;
+    margin: auto;
+}
+
+article .pagination a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.2px solid rgba(128, 128, 128, 0.671);
+    background-color: white;
+    color: rgb(102, 102, 102);
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+article .pagination a:hover {
+    color: #ff4a52;
+}
+
+article .pagination a:focus-within {
+    outline: 5px solid #ff4a537c;
+    color: #ff4a52;
+}
+
+aside {
+    display: flex;
+    width: 300px;
+    column-gap: 50px;
+    row-gap: 50px;
+    flex-direction: column;
+}
+
+aside .search-bar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 30px;
+}
+
+aside .search-bar .input,
+aside .category-bar .input {
+    display: flex;
+    width: 290px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+aside .search-bar .input > input[type=text],
+aside .category-bar .input > input[type=text] {
+    display: flex;
+    width: 290px;
+    height: 100%;
+    border: 1px solid grey;
+    padding: 0 0 0 20px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+aside .search-bar .input > i {
+    align-items: center;
+    padding: 25px 20px;
+    position: absolute;
+    right: 0;
+}
+
+aside .search-bar button,
+aside .category-bar button {
+    width: 290px;
+    height: 51px;
+    background-color: #1EC6B6;
+    color: white;
+    border: none;
+    margin: 10px 0 0 0;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+aside .search-bar button:hover,
+aside .category-bar button:hover {
+    background-color: #ff4a52;
+}
+
+aside .category-bar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 30px;
+    background-color: white;
+}
+
+aside .category-bar h1 {
+    height: 40px;
+    font-size: 24px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+}
+
+aside .category-bar ul {
+    list-style: none;
+}
+
+aside .category-bar ul li {
+    margin: 20px 0;
+    height: 30px;
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+aside .category-bar ul li:hover a {
+    color: #ff4a52;
+    transition: .3s ease;
+}
+
+aside .posts {
+    display: flex;
+    width: 290px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+aside .posts .img-prev {
+    width: auto;
+}
+
+aside .posts .img-prev img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+aside .title {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+}
+
+aside .title > h3, 
+aside .title > p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+aside .category-bar .tags {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10px;
+    padding: 20px 0;
+}
+
+aside .category-bar .tags p {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 4px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+aside .category-bar .tags p:hover {
+    border: 1px solid #ff4a52;
+    background-color: #ff4a52;
+    color: white;
+}
+
+aside .insta-post {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+aside .insta-post img {
+    width: 87px;
+    height: 87px;
+    object-fit: cover;
+}
