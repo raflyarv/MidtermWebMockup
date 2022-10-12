@@ -113,7 +113,7 @@ article .pagination a:hover {
 }
 
 article .pagination a:focus-within {
-    outline: 5px solid #ff4a537c;
+    outline: 5px solid #ED8B3A;
     color: #ED8B3A;
 }
 
