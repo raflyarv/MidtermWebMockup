@@ -46,7 +46,7 @@ article .items .image-preview h1 {
     width: 84px;
     font-size: 28px;
     padding: 12px 10px;
-    background-color: #ff4a52;
+    background-color: #ED8B3A;
     border-radius: 5px;
     color: white;
     text-align: center;
@@ -109,12 +109,12 @@ article .pagination a {
 }
 
 article .pagination a:hover {
-    color: #ff4a52;
+    color: #ED8B3A;
 }
 
 article .pagination a:focus-within {
     outline: 5px solid #ff4a537c;
-    color: #ff4a52;
+    color: #ED8B3A;
 }
 
 aside {
@@ -165,7 +165,7 @@ aside .search-bar button,
 aside .category-bar button {
     width: 290px;
     height: 51px;
-    background-color: #1EC6B6;
+    background-color: #ED8B3A;
     color: white;
     border: none;
     margin: 10px 0 0 0;
@@ -206,7 +206,7 @@ aside .category-bar ul li {
 }
 
 aside .category-bar ul li:hover a {
-    color: #ff4a52;
+    color: #ED8B3A;
     transition: .3s ease;
 }
 
@@ -262,8 +262,8 @@ aside .category-bar .tags p {
 }
 
 aside .category-bar .tags p:hover {
-    border: 1px solid #ff4a52;
-    background-color: #ff4a52;
+    border: 1px solid #ED8B3A;
+    background-color: #ED8B3A;
     color: white;
 }
 

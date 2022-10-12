@@ -85,9 +85,22 @@ nav .main-navbar {
 nav .main-navbar .logo {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 25%;
     position: relative;
-    border-right: 0.5px solid #7a838bef;
+}
+
+nav .main-navbar .logo img {
+    width: 90px;
+    height: 90px;
+    margin-top: -15px;
+}
+
+nav .main-navbar .logo p {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: -15px;
 }
 
 nav .main-navbar ul {
@@ -97,6 +110,7 @@ nav .main-navbar ul {
     align-items: center;
     justify-items: center;
     position: static;
+    border-left: 0.5px solid #7a838bef;
 }
 
 nav .main-navbar li, a{
@@ -107,12 +121,13 @@ nav .main-navbar li, a{
 }
 
 nav .main-navbar li, a:hover{
-    color: rgb(3, 215, 215);
+    color: #ED8B3A;
     transition: .2s ease-in-out;
 }
 
 nav .main-navbar ul li ul {
     display: none;
+    border: none;
 }
 
 nav .main-navbar ul li:hover > ul{
@@ -157,7 +172,7 @@ nav .side-navbar .cell {
 }
 
 nav .side-navbar .cell i {
-    color: #ff4a52;
+    color: #ED8B3A;
 }
 
 nav .side-navbar .cell p {
@@ -181,7 +196,7 @@ nav .side-navbar .socials i {
 }
 
 nav .side-navbar .socials i:hover {
-    color: #ff4a52;
+    color: #ED8B3A;
 }
 
 nav .search-button button {
@@ -190,14 +205,13 @@ nav .search-button button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ff4a52;
+    background-color: #ED8B3A;
     border: none;
     cursor: pointer;
 }
 
-nav .search-button button img {
-    width: 20px;
-    height: 20px;
+nav .search-button button i {
+    color: white;
 }
 
 .image-gallery {
@@ -242,7 +256,7 @@ nav .search-button button img {
     margin: 50px 0 0 0;
     border: none;
     border-radius: 3px;
-    background-color: #1EC6B6;
+    background-color: #ED8B3A;
     font-size: 16px;
     font-weight: 500;
     color: white;
@@ -257,7 +271,7 @@ nav .search-button button img {
 .wheretogo-area {
     width: 100%;
     height: 150px;
-    background-color: #040e27;
+    background-color: #461646;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -280,22 +294,29 @@ nav .search-button button img {
     width: 220px;
     height: 50px;
     background-color: transparent;
-    border: 1px solid #363e52;
+    border: 1px solid #ED8B3A;
     color: white;
     border-radius: 8px;
     padding: 0 10px;
 }
+
 .wheretogo-area input[type=text]::placeholder {
     color: white;
 }
+
 .wheretogo-area input[type=date] {
     width: 220px;
     height: 50px;
     background-color: transparent;
-    border: 1px solid #363e52;
+    border: 1px solid #ED8B3A;
     color: white;
     border-radius: 8px;
     padding: 0 10px;
+    cursor: pointer;
+}
+
+.wheretogo-area input[type=date]::-webkit-calendar-picker-indicator{
+    color-scheme: dark;
 }
 
 .wheretogo-area select {
@@ -305,7 +326,8 @@ nav .search-button button img {
     border-radius: 8px;
     background-color: transparent;
     color: white;
-    border: 1px solid #363e52;
+    border: 1px solid #ED8B3A;
+    cursor: pointer;
 }
 
 .wheretogo-area select option {
@@ -314,13 +336,14 @@ nav .search-button button img {
     border-radius: 5px;
     padding: 20px 0;
     color: black;
+    cursor: pointer;
 }
 
 .wheretogo-area button {
     width: 133px;
     height: 50px;
     border: none;
-    background-color: #ff4a52;
+    background-color: #ED8B3A;
     color: white;
     font-weight: 600;
     font-size: 16px;
@@ -330,7 +353,7 @@ nav .search-button button img {
 }
 
 .wheretogo-area button:hover {
-    background-color: #1EC6B6;
+    background-color: #ff4a52;
 }
 
 .pop-destination {
@@ -424,11 +447,11 @@ nav .search-button button img {
 }
 
 .pop-destination .destinations .items:hover .menu h3 {
-    color: #ff4a52;
+    color: #ED8B3A;
 }
 
 .pop-destination .destinations .items:hover .menu a {
-    background-color: #ff4a52;
+    background-color: #ED8B3A;
 }
 
 .news-subscribe {
@@ -484,10 +507,15 @@ nav .search-button button img {
     height: 50px;
     border: none;
     border-radius: 5px;
-    background-color: #ff4a52;
+    background-color: #ED8B3A;
     color: white;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.news-subscribe .user-email button:hover {
+    background-color: #ff4a52;
 }
 
 .search-display {
@@ -533,7 +561,7 @@ nav .search-button button img {
 .search-display button {
     width: 120px;
     height: 70px;
-    background-color: #ff4a52;
+    background-color: #ED8B3A;
     border: none;
     color: white;
     font-size: 14px;
@@ -679,11 +707,11 @@ nav .search-button button img {
 }
 
 .pop-places .places .items:hover .content h2 {
-    color: #ff4a52;
+    color: #ED8B3A;
 }
 
 .pop-places .places .items:hover a  {
-    background-color: #ff4a52;
+    background-color: #ED8B3A;
 }
 
 .pop-places button {
@@ -692,10 +720,15 @@ nav .search-button button img {
     height: 50px;
     border: none;
     border-radius: 5px;
-    background-color: #ff4a52;
+    background-color: #ED8B3A;
     color: white;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.pop-places button:hover {
+    background-color: #ff4a52;
 }
 
 .video-preview {
@@ -781,7 +814,7 @@ nav .search-button button img {
 
 .key-products .keys i {
     margin-bottom: 30px;
-    color: #ff4a52;
+    color: #ED8B3A;
 }
 
 .key-products .keys h2 {
@@ -834,7 +867,7 @@ section .testimonials .profile > img {
 
 section .testimonials .profile > i {
     padding: 30px 22px;
-    background-color: #1EC6B6;
+    background-color: #ED8B3A;
     border-radius: 100%;
     color: white;
     margin: -40px -80px 0 -5px;
@@ -895,7 +928,7 @@ section .pop-places {
 }
 
 section .pop-places .trips:hover .title h1 {
-    color: #ff4a52;
+    color: #ED8B3A;
 }
 
 section .pop-places .trips {
@@ -939,7 +972,7 @@ footer {
     flex-direction: column;
     width: 80%;
     height: 600px;
-    background-color: #040e27;
+    background-color: #461646;
     padding: 50px 10% 0 10%;
 }
 
@@ -959,9 +992,24 @@ footer .address {
     color: white;
 }
 
-footer .address img {
-    width: 138px;
-    height: 41px;
+footer .address .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer .address .logo img {
+    width: 120px;
+    height: 120px;
+    margin-top: -20px;
+}
+
+footer .address .logo p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 footer .address p {
