@@ -398,7 +398,7 @@ nav .search-button button i {
 .pop-destination .destinations .items {
     display: flex;
     flex-flow: row;
-    position: relative;
+    position: relative ;
     width: 350px;
     height: 261px;
     border-radius: 10px;
@@ -408,6 +408,9 @@ nav .search-button button i {
 .destinations > .items img {
     position: absolute;
     object-fit: cover;
+    width: 350px;
+    height: 261px;
+    border-radius: 10px;
     /* -webkit-mask-image: linear-gradient(black, black 50%);
     mask-image: linear-gradient(black, black 50%); */
     filter: brightness(60%);
